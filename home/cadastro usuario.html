@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Cadastro de Usuário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .error-message {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Usuário</h1>
+  <form onsubmit="return validateForm()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+    <span id="telefone-error" class="error-message"></span>
+    
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo" required>
+      <option value="">Selecione</option>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+    </select>
+    
+    <label for="data-nascimento">Data de Nascimento:</label>
+    <input type="date" id="data-nascimento" name="data-nascimento" required>
+    
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required>
+    <span id="endereco-error" class="error-message"></span>
+    
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required>
+      <option value="">Selecione</option>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <!-- e assim por diante, incluindo todos os estados -->
+    </select>
+    
+    <input type="submit" value="Cadastrar">
+  </form>
+
+  <script>
+    function validateForm() {
+      var telefoneInput = document.getElementById("telefone");
+      var enderecoInput = document.getElementById("endereco");
+      var telefoneError = document.getElementById("telefone-error");
+      var enderecoError = document.getElementById("endereco-error");
+      
+      if (telefoneInput.value.trim() === "") {
+        telefoneError.textContent = "Por favor, preencha o campo telefone.";
+        return false;
+      } else {
+        telefoneError.textContent = "";
+      }
+      
+      if (enderecoInput.value.trim() === "") {
+        enderecoError.textContent = "Por favor, preencha o campo endereço.";
+        return false;
+      } else {
+        enderecoError.textContent = "";
+      }
+      
+      return true;
+    }
+  </script>
+</body>
+</html>
