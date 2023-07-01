@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Contatos - Site de Notícias</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylehome.css" />
+  <style>
+    html, body {
+      height: 100%;
+    }
+    .wrapper {
+      min-height: 100%;
+      margin-bottom: -50px; /* Height of the footer */
+      position: relative;
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="home.html">Notícias</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="internaciona.html">Internacional</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Esportes.html">Esportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Entretenimento.html">Entretenimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contatos.html">Contatos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="jumbotron text-center">
+      <h1 class="display-4">inscreva-se</h1>
+      <p class="lead">Não perca nossas noticias! increva-se para se manter informado</p>
+      <a class="btn btn-primary" href="cadastro usuario.html" role="button">Inscreva-se</a>
+    </header>
+
+    <!-- Contact Section -->
+<section class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Informações de Contatos</h5>
+            <p class="card-text">Entre em contato através dos seguintes meios:</p>
+            <ul class="list-unstyled">
+              <li><strong>Telefone:</strong> +55 (49)999999999</li>
+              <li><strong>Email:</strong> Noticas_news@gmail.com</li>
+              <li><strong>Endereço:</strong> Av. Dom Pedro 2, N 147 - Lages, SC</li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Redes sociais</h5>
+            <p class="card-text">Encontre-nos nas seguintes redes sociais</p>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.facebook.com/noticias" target="_blank">
+                  <i class="fab fa-facebook-square"></i> Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/noticias" target="_blank">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/noticias" target="_blank">
+                  <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <li>
+                    <a href="https://mail.google.com/mail/noticias" target="_blank">
+                      <i class="fab fa-gmail"></i> E-mail suporte
+                    </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container text-center">
+      <span>&copy; 2023 Site de Notícias. Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
